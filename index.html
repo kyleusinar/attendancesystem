@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/gif" href="C:\Users\\OneDrive\Desktop\project\STCLARE.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <style>
+        body{
+         background-image: url('BGLG.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        filter: blur(5px); 
+        z-index: -1;
+      }
+    
+        .login-form {
+            width: 250px;
+            margin: 0 auto;
+            background-image: url();
+            border: 0px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+            
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .login-form input[type="submit"] {
+            background-color: #4c82af;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .login-form input[type="submit"]:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-form">
+    <h2>LOGIN FORM</h2>
+    <form action="ATTENDANCE.html" method="post">
+        <input type="text" name="Username" placeholder="Username" required>
+        <br>
+        <input type="Password" name="Password" placeholder="Password" required>
+        <br>
+        <button type="submit">LOGIN</button>
+    </form>
+    </div>
+<script>
+    function ATTENDANCE(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if(username== "KYLE" && password== "USINAR"){
+            window.location.assign("ATTENDANCE.HTML");
+            alert("LOGIN SUCCESSFULLY ");
+        }
+        else{
+            alert("INVALID INFORMATION ");
+            return;
+        }
+    }
+</script>
+
+
+</body>
+</html>
+
